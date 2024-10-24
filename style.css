@@ -89,13 +89,13 @@ p {
 @keyframes imageSlider {
   0%,
   100% {
-    background-image: url("../img/inicio/INICIO-QSE-1.webp");
+    background-image: url("img/inicio/INICIO-QSE-1.webp");
   }
   33% {
-    background-image: url("../img/inicio/INICIO-QSE-2.webp");
+    background-image: url("img/inicio/INICIO-QSE-2.webp");
   }
   66% {
-    background-image: url("../img/inicio/INICIO-QSE-3.webp");
+    background-image: url("img/inicio/INICIO-QSE-3.webp");
   }
 }
 
@@ -160,12 +160,12 @@ p {
 
 /* Imagen de fondo para la página de inicio */
 .stats.estadisicas {
-  background-image: url("../img/inicio/EXPERIENCIA-QSE-3.webp");
+  background-image: url("img/inicio/EXPERIENCIA-QSE-3.webp");
 }
 
 /* Imagen de fondo para la página de nosotros */
 .stats.nuestras {
-  background-image: url("../img/nosotros/NOSOTROS-QSE-Nuestra-Vision.webp");
+  background-image: url("img/nosotros/NOSOTROS-QSE-Nuestra-Vision.webp");
 }
 
 
@@ -272,32 +272,32 @@ font-size: large;
 }
 
 .hero-nosotros {
-  background-image: url("../img/nosotros/NOSOTROS-QSE.webp");
+  background-image: url("img/nosotros/NOSOTROS-QSE.webp");
 }
 
 .hero-mecanismo {
-  background-image: url("../img/mecanismo/MECANISMO-DE-TRABAJO.webp");
+  background-image: url("img/mecanismo/MECANISMO-DE-TRABAJO.webp");
 }
 
 .hero-capacitaciones {
-  background-image: url("../img/capacitaciones/CAPACITACIONES-QSE.webp");
+  background-image: url("img/capacitaciones/CAPACITACIONES-QSE.webp");
 }
 .hero-contacto {
-  background-image: url("../img/contacto/CONTACTENOS-QSE.webp");
+  background-image: url("img/contacto/CONTACTENOS-QSE.webp");
 }
 
 .hero-reclamaciones {
-  background-image: url("../img/reclamaciones/RECLAMACIONES-QSE.webp");
+  background-image: url("img/reclamaciones/RECLAMACIONES-QSE.webp");
 }
 
 .hero-servicios {
   background-position: top center;
-  background-image: url("../img/servicios/SERVICIOS-QSE.webp");
+  background-image: url("img/servicios/SERVICIOS-QSE.webp");
 }
 
 
 .hero-blogs {
-  background-image: url("../img/blogs/BLOG-QSE.webp");
+  background-image: url("img/blogs/BLOG-QSE.webp");
 }
 
 .hero::before {
