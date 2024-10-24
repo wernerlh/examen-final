@@ -1,8 +1,9 @@
-/* Generales */
 
+/* Generales */
 :root {
   --primario-color: #ffc107;
   --secundario-color: #0b7575;
+  --bs-dropdown-link-active-bg: #ffc107;
 }
 
 body {
@@ -19,6 +20,18 @@ p {
 .text-justify {
   text-align: justify;
 }
+/* ----------------------------------------------------------------------------------- */
+
+/* List */
+.icono-visto-bueno {
+  color: var(--secundario-color);
+}
+
+.lista-unstyled .bi {
+  color: var(--secundario-color);
+}
+
+/* ----------------------------------------------------------------------------------- */
 
 /* boton */
 .btn-custom {
@@ -32,6 +45,7 @@ p {
   background-color: #fff;
   color: var(--secundario-color);
 }
+/* ----------------------------------------------------------------------------------- */
 
 /* Navbar */
 .navbar {
@@ -85,185 +99,11 @@ p {
   padding: 10px 15px;
 }
 
-/* Hero Section */
-@keyframes imageSlider {
-  0%,
-  100% {
-    background-image: url("img/inicio/INICIO-QSE-1.webp");
-  }
-  33% {
-    background-image: url("img/inicio/INICIO-QSE-2.webp");
-  }
-  66% {
-    background-image: url("img/inicio/INICIO-QSE-3.webp");
-  }
-}
-
-.heroinicio {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  animation: imageSlider 15s infinite ease-in-out;
-}
-
-.heroinicio::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.heroinicio-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  z-index: 2;
-}
-
-.heroinicio h1,
-.heroinicio h2 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  color: white;
-}
-
-/* Section */
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.button-container {
-  margin-top: auto;
-  text-align: center;
-}
 
 
-/* Stats */
-.stats {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: white; /* Asegúrate de que el texto sea visible sobre la imagen oscurecida */
-}
+/* ----------------------------------------------------------------------------------- */
 
-/* Imagen de fondo para la página de inicio */
-.stats.estadisicas {
-  background-image: url("img/inicio/EXPERIENCIA-QSE-3.webp");
-}
-
-/* Imagen de fondo para la página de nosotros */
-.stats.nuestras {
-  background-image: url("img/nosotros/NOSOTROS-QSE-Nuestra-Vision.webp");
-}
-
-
-.stats::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
-  z-index: 1;
-}
-
-.stats .container {
-  position: relative;
-  z-index: 2;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-/* card */
-.service-icon {
-  font-size: 3rem;
-  color: var(--primario-color);
-  transition: color 0.3s, transform 0.3s;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-top: 15px;
-  color: #333;
-}
-
-.card-text {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-}
-
-.img-margin-bottom {
-  margin-bottom: 30px;
-}
-
-sub {
-  background-color: #ffffff;
-}
-
-.social-icon {
-  font-size: 1.3rem; /* Ajusta este valor según sea necesario */
-}
-
-.copyryght {
-font-size: large;
-}
-
-/* Hero */
+/* Hero General */
 .hero {
   position: relative;
   background-size: cover;
@@ -326,7 +166,165 @@ font-size: large;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   color: white;
 }
+/* ----------------------------------------------------------------------------------- */
 
+/* Hero Inicio */
+@keyframes imageSlider {
+  0%,
+  100% {
+    background-image: url("img/inicio/INICIO-QSE-1.webp");
+  }
+  33% {
+    background-image: url("img/inicio/INICIO-QSE-2.webp");
+  }
+  66% {
+    background-image: url("img/inicio/INICIO-QSE-3.webp");
+  }
+}
+
+.heroinicio {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: imageSlider 15s infinite ease-in-out;
+}
+
+.heroinicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.heroinicio-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.heroinicio h1,
+.heroinicio h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/* ----------------------------------------------------------------------------------- */
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  margin-top: auto;
+  text-align: center;
+}
+/* ----------------------------------------------------------------------------------- */
+
+/* Stats */
+.stats {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.stats.estadisicas {
+  background-image: url("img/inicio/EXPERIENCIA-QSE-3.webp");
+}
+
+
+.stats.nuestras {
+  background-image: url("img/nosotros/NOSOTROS-QSE-Nuestra-Vision.webp");
+}
+
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.stats .container {
+  position: relative;
+  z-index: 2;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+/* ----------------------------------------------------------------------------------- */
+
+/* card */
+.service-icon {
+  font-size: 3rem;
+  color: var(--primario-color);
+  transition: color 0.3s, transform 0.3s;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 15px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+/* ----------------------------------------------------------------------------------- */
 
 /* acordeon */
 .accordion-button:not(.collapsed) {
@@ -337,12 +335,29 @@ font-size: large;
 .accordion-button:focus {
   box-shadow: 0 0 0 0.25rem rgba(11, 117, 117, 0.5);
 }
+/* ----------------------------------------------------------------------------------- */
 
-/* List */
-.icono-visto-bueno {
-  color: var(--secundario-color);
+/* Footer */
+footer {
+  background-color: #333;
 }
 
-.lista-unstyled .bi {
-  color: var(--secundario-color);
+.img-margin-bottom {
+  margin-bottom: 30px;
 }
+
+sub {
+  background-color: #ffffff;
+}
+
+.social-icon {
+  font-size: 1.3rem;
+}
+
+.copyryght {
+font-size: large;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
