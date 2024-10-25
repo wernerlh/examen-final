@@ -369,6 +369,14 @@ sub {
 
 .copyryght {
 font-size: large;
+background-color: white;
+color: black;
+}
+
+.bold-link {
+  font-weight: bold; 
+  color: inherit; 
+  text-decoration: none; 
 }
 /* ----------------------------------------------------------------------------------- */
 
