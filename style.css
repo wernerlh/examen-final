@@ -48,16 +48,29 @@ p {
 
 /* boton */
 .btn-custom {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: var(--secundario-color);;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: var(--secundario-color);;
+  color: white;
+}
+
+.btn-custom2 {
   background-color: var(--secundario-color);
   border: 2px solid var(--secundario-color);
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.btn-custom:hover {
+.btn-custom2:hover {
   background-color: #fff;
   color: var(--secundario-color);
 }
+
 /* ----------------------------------------------------------------------------------- */
 
 /* Navbar */
@@ -316,7 +329,7 @@ p {
 }
 
 .card:hover {
-  transform: translateY(-10px);
+
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
