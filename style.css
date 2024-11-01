@@ -75,7 +75,7 @@ p {
 
 /* Navbar */
 .navbar {
-  background-color: #252525 !important;
+  background-color: #252525 ;
 }
 
 .navbar-brand img {
@@ -83,7 +83,7 @@ p {
 }
 
 .nav-link {
-  color: white !important;
+  color: white ;
   position: relative;
   font-weight: bold;
   margin-right: 30px;
@@ -91,12 +91,15 @@ p {
 }
 
 .nav-link:hover,
-.nav-link.active {
-  color: var(--primario-color) !important;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--primario-color);
+  font-weight: bolder;
+
 }
 
 .nav-link::after {
   content: "";
+
   position: absolute;
   bottom: -5px;
   left: 0;
